@@ -8,7 +8,7 @@ Progetto per il corso di "Architetture dei sistemi software".
 ## Esecuzione
 
 #### Windows
-Raggiungere il file run.bat situato in scripts\windows e far partire lo script.
+Raggiungere il file run.bat situato in Environments\shared\scripts\windows e far partire lo script.
 È richiesta l'istallazione di Gradle
 
 #### Linux
