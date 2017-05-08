@@ -11,5 +11,5 @@ Progetto per il corso di "Architetture dei sistemi software".
 Raggiungere il file run.bat situato in Environments\shared\scripts\windows e far partire lo script.
 È richiesta l'istallazione di Gradle
 
-#### Linux
-** todo **
+#### Vagrant
+Raggiungere la cartella Environment/developer/ e lanciare "vagrant up"

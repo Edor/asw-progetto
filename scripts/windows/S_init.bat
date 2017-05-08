@@ -1,2 +1,0 @@
-cd ..\..\S
-gradle bootRun
