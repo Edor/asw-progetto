@@ -11,16 +11,30 @@ public class FilmDirectorsAwards {
 	@Value("${awards}")
 	private String awards;
 	
+	@Value("${mel.awards}")
+	private String melAwards;
+
+	@Value("${mel.braveheart.awards}")
+	private String melBraveAwards;
+	
 	@RequestMapping("/S2/{filmDirector}/{film}")
-	public String directorAwardForSpecificMovie() {
-		String[] awardsArray = awards.split(",");
+	public String directorAwardForSpecificMovie(@PathVariable("filmDirector") String filmDirector, @PathVariable("film") String film) {
+		String[] awardsArray = null;
+		if(filmDirector.equals("Mel Gibson") && film.equals("Braveheart"))
+			awardsArray = melBraveAwards.split(",");
+		else
+			awardsArray = awards.split(",");
 		int i = (int) (Math.round(Math.random()*(awardsArray.length-1)));
 		return awardsArray[i];
 	}
 	
 	@RequestMapping("/S2/{filmDirector}")
 	public String directorsFacts(@PathVariable String filmDirector) {
-		String[] awardsArray = awards.split(",");
+		String[] awardsArray = null;
+		if(filmDirector.equals("Mel Gibson"))
+			awardsArray = melAwards.split(",");
+		else
+			awardsArray = awards.split(",");
 		int i = (int) (Math.round(Math.random()*(awardsArray.length-1)));
 		return awardsArray[i];
 	}
