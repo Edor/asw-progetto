@@ -1,12 +1,12 @@
-package progetto;
+package it.uniroma3.progettoasw;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class S2Application {
+public class S1Application {
 
 	public static void main(String[] args) {
-		SpringApplication.run(S2Application.class, args);
+		SpringApplication.run(S1Application.class, args);
 	}
 }
