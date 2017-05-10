@@ -1,2 +1,2 @@
-cd ..\..\S2
+cd ..\..\..\..\asw-progetto-master\S2
 gradle bootRun
