@@ -54,6 +54,8 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
         node.vm.provision :shell, path: "../shared/scripts/setup-gradle.sh"
         node.vm.provision :shell, path: "../shared/scripts/setup-maven.sh"
 
+	#esecuzione dei servizi su localhost	
+
         node.vm.provision :shell, run:"always", path: "../shared/scripts/run-gradle-S.sh"
         node.vm.provision :shell, run:"always", path: "../shared/scripts/run-gradle-S1.sh"
         node.vm.provision :shell, run:"always", path: "../shared/scripts/run-gradle-S2.sh"
