@@ -18,7 +18,7 @@ public class FilmDirectorsAwards {
 	private String melBraveAwards;
 	
 	@RequestMapping("/S2/{filmDirector}/{film}")
-	public String directorAwardForSpecificMovie(@PathVariable("filmDirector") String filmDirector, @PathVariable("film") String film) {
+	public String directorAwardForSpecificMovie(@PathVariable String filmDirector, @PathVariable String film) {
 		String[] awardsArray = null;
 		if(filmDirector.equals("Mel Gibson") && film.equals("Braveheart"))
 			awardsArray = melBraveAwards.split(",");

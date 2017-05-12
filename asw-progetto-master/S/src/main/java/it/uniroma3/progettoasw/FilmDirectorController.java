@@ -19,9 +19,9 @@ public class FilmDirectorController {
 	public String getAdjectiveAndAwardForSpecificFilm(@PathVariable String filmDirector, @PathVariable String film) {
 				
 		return  filmDirector + " is " + 
-				getAdjective(s1Uri +  filmDirector) +
+				"\"" + getAdjective(s1Uri +  filmDirector) + "\"" +
 				" and he won a/an " +
-				getAwardForFilm(s2Uri + filmDirector + "/" + film) + 
+				"\"" + getAwardForFilm(s2Uri + filmDirector + "/" + film) + "\"" + 
 				" thanks to " + 
 				film;
 		
@@ -31,9 +31,9 @@ public class FilmDirectorController {
 	public String getAdjectiveAndAward(@PathVariable String filmDirector) {
 				
 		return  filmDirector + " is " + 
-				getAdjective(s1Uri +  filmDirector) +
+				"\"" + getAdjective(s1Uri +  filmDirector) + "\"" +
 				" and he won a/an " +
-				getAward(s2Uri + filmDirector);
+				"\"" + getAward(s2Uri + filmDirector) + "\"" ;
 				
 	}
 
