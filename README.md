@@ -9,10 +9,10 @@ La descrizione dettagliata del dominio applicativo è presente in un documento a
 
 Il progetto contiene degli script sia per Windows che per Linux per lanciarlo da terminale.
 
-È possibile istanziare una macchina virtuale utilizzando Vagrant che contiene già tutte le dipendenze necessarie.
+È possibile in alternativa istanziare una macchina virtuale utilizzando Vagrant che contiene già tutte le dipendenze necessarie. Gli script vengono lanciati ad ogni avvio della macchina virtuale.
 
 #### Windows
-Raggiungere il file run.bat situato in Environments\shared\scripts\windows e far partire lo script.
+Raggiungere il file run.bat situato in Environments/shared/scripts/windows e far partire lo script.
 
 È richiesta l'istallazione di Gradle.
 
