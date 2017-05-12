@@ -218,3 +218,9 @@ pip-log.txt
 
 #Downloads for Environment
 Environment/shared/downloads/
+
+#################
+## Vagrant
+#################
+
+.vagrant
