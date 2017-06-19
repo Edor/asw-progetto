@@ -7,15 +7,15 @@ services:
         constraints: [node.role == manager]
 
   S:
-    image: swarm.inf.uniroma3.it:5000/S-9007
+    image: swarm.inf.uniroma3.it:5000/s-9007
     depends_on:
     - "eureka"
     deploy:
       mode: replicated
-      replicas: 2
+      replicas: 1
     
   S1:
-    image: swarm.inf.uniroma3.it:5000/S1-9007
+    image: swarm.inf.uniroma3.it:5000/s1-9007
     depends_on:
     - "eureka"
     deploy:
@@ -23,7 +23,7 @@ services:
       replicas: 1   
  
   S2:
-    image: swarm.inf.uniroma3.it:5000/S2-9007
+    image: swarm.inf.uniroma3.it:5000/s2-9007
     depends_on:
     - "eureka"
     deploy:
