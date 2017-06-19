@@ -1,0 +1,43 @@
+version: '3'
+services:
+  eureka:
+    image: swarm.inf.uniroma3.it:5000/eureka-9007
+    deploy:
+      placement:
+        constraints: [node.role == manager]
+
+  S:
+    image: swarm.inf.uniroma3.it:5000/S-9007
+    depends_on:
+    - "eureka"
+    deploy:
+      mode: replicated
+      replicas: 2
+    
+  S1:
+    image: swarm.inf.uniroma3.it:5000/S1-9007
+    depends_on:
+    - "eureka"
+    deploy:
+      mode: replicated
+      replicas: 1   
+ 
+  S2:
+    image: swarm.inf.uniroma3.it:5000/S2-9007
+    depends_on:
+    - "eureka"
+    deploy:
+      mode: replicated
+      replicas: 1    
+  
+  zuul:
+    image: swarm.inf.uniroma3.it:5000/zuul-9007
+    depends_on:
+    - "eureka"
+    ports:
+    - "9007:8080"
+
+
+
+
+

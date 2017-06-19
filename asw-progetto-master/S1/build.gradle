@@ -15,7 +15,7 @@ apply plugin: 'eclipse'
 apply plugin: 'org.springframework.boot'
 
 jar {
-	baseName = 'S1'
+	baseName = 'S1-9007'
 	version = '0.0.1-SNAPSHOT'
 }
 //version = '0.0.1-SNAPSHOT'

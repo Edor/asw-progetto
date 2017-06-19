@@ -224,3 +224,9 @@ Environment/shared/downloads/
 #################
 
 .vagrant
+
+#################
+## Chiavi Swarm
+#################
+
+swarm.inf.uniroma3.it/resources/certs/
