@@ -35,7 +35,7 @@ E' richiesta l'installazione di xterm.
 #### Vagrant
 Raggiungere la cartella Environment/developer/ e lanciare "vagrant up".
 
-**Nota bene:
+**Nota bene:**
 
 Dal rilascio dell'applicazione sullo swarm, volendo comunque eseguirla in locale, occorre modificare le porte sulle quali rispondono i servizi in quanto tutti in ascolto sulla porta 8080.  
 
