@@ -4,7 +4,7 @@
 Progetto per il corso di "Architetture dei sistemi software".
 
 I servizi differiscono in parte da quanto presente nella "Descrizione del dominio", in particolare si è pensato di far restituire "aggettivi" e "riconoscimenti" specifici per il regista "Mel Gibson" e per il regista "Mel Gibson" ed il film "Braveheart", al fine di giustificare almeno in parte la presenza di parametri nell'url delle richieste ai servizi S1 ed S2
-=======
+
 La descrizione dettagliata del dominio applicativo è presente in un documento apposito.
 
 ## Esecuzione su swarm
@@ -24,7 +24,6 @@ Raggiungere il file run.bat situato in Environments/shared/scripts/windows e far
 #### Vagrant
 Raggiungere la cartella Environment/developer/ e lanciare "vagrant up"
 E' richiesta un'attesa media di 3 minuti.
-=======
 È richiesta l'istallazione di Gradle.
 
 #### Linux
