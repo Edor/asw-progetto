@@ -1,0 +1,56 @@
+<html>
+<head>
+<title>Registi 9007</title>
+<meta charset="UTF-8">
+</head>
+
+<body>
+	<h1>Link ai servizi</h1>
+	<p>
+		<a href="/s/Mel Gibson">Genera un aggettivo casuale speciale di Mel Gibson e un premio casuale da lui ottenuto.</a>
+	</p>
+	<p>
+		<a href="/s/Mel Gibson/Braveheart">Genera un aggettivo casuale speciale di Mel Gibson e un premio casuale ottenuto grazie a <i>Braveheart</i>.</a>
+	</p>
+	
+	<p>
+		<a href="/s/Sergio Londei/Flame on the Rift">Genera un aggettivo casuale per Sergio Londei e un premio casuale vinto grazie a <i>Flame on the Rift</i>.</a>
+	</p>
+	<p>
+		<a href="/s/Sergio Londei">Genera un aggettivo casuale per Sergio Londei</a>
+	</p>
+		
+	<br>
+	<h2>Servizio S</h2>
+	<p></p>
+	Il servizio S si occupa di contattare i Servizi S1 e S2 costruendo una frase dal loro output (casuale).
+	
+	Operazioni:
+	<ul>
+	<li> <i>/s/{regista}/{film}</i> restituisce un aggettivo casuale per il <i>regista</i> e un riconoscimento casuale per il <i>film</i> indicato insieme ad un premio casuale che ha vinto.</li>
+	<li> <i>/s/{regista}</i> restituisce invece solo un aggettivo casuale per il <i>regista</i>.</li>
+	</ul>
+	
+	<h2>Servizio S1</h2>
+	
+	<p></p>
+	Il servizio risponde con un aggettivo specifico quando lo si interroga su Mel Gibson. Altrimenti l'aggettivo ritornato è di altro tipo.
+	
+	Operazioni:
+	<ul>
+	<li> <i>/S1/{regista}</i> restituisce un aggettivo casuale.</li>
+	</ul>
+	
+	<h2>Servizio S2</h2>
+	
+	<p></p>
+	Restituisce un riconoscimento casuale che ha conseguito il regista.
+
+	Operazioni:
+	<ul>
+	<li> <i>/S2/{regista}/{film}</i> restituisce un riconoscimento (casuale) conseguito dal <i>regista</i> grazie al suo <i>film</i>.</li>
+	<li> <i>/S2/{regista}</i> restituisce invece un riconoscimento (casuale) ignorando i film prodotti.</li>
+	</ul>
+	
+</body>
+</html>
